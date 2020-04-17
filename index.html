@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bill {
+            border: 1px solid;
+            padding: 20px;
+            max-width: 650px;
+        }
+
+        .bill .title {
+            font-weight:900;
+            color:#0069bd;
+        }
+
+        .bill .red-title {
+            color: red;
+        }
+
+        .bill .brand {
+            color:#03a9f4;
+            padding: 5px;
+        }
+
+        .bill .brand .row {
+            border-bottom: 0px;
+        }
+
+        .bill .brand .brand-title {
+            top: 15px;
+        }
+
+        .bill .brand img {
+            max-height: 75px;
+            max-width: 75px;
+        }
+
+        .bill .row {
+            border-bottom: 1px solid blue;
+        }
+
+        .bill .row .footer {
+            padding: 10px 20px 8px 20px;
+            margin-top: 15px;
+            background-color:#ebf2fd;
+        }
+
+        .bill table th {
+            width: 25%;
+            color:#03a9f4;
+        }
+
+        .bill table td {
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <main class="container">
+
+        <div style="margin: auto; max-width: 650px;padding: 100px 0 20px 0;">
+            <small>Contoh Bil Air Untuk</small>
+            <h3>Pengurusan Air Pahang Berhad</h3>
+        </div>
+
+        <div id="bill" class="bill" style="margin: auto;">
+            <!-- Start of First Section -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="title">Bil Air</h2>
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>No. Akaun</td>
+                                <td>: 01-298653-36</td>
+                            </tr>
+                            <tr>
+                                <td>No. Premis</td>
+                                <td>: 01-20-539-0500-00</td>
+                            </tr>
+                            <tr>
+                                <td>No. Bil</td>
+                                <td>: 022022 (Feb 2020)</td>
+                            </tr>
+                            <tr>
+                                <td>Deposit</td>
+                                <td>: RM 100.00 PM 0187</td>
+                            </tr>
+                            <tr>
+                                <td>Tarikh Bil</td>
+                                <td>: 27-02-2020</td>
+                            </tr>
+                            <tr>
+                                <td>No. Kontrak</td>
+                                <td>: </td>
+                            </tr>
+                            <tr>
+                                <td>No. Invois</td>
+                                <td>: 012986536-022020</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="brand">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="http://globalmax.com.my/MCKIP/wp-content/uploads/2020/02/PAIP_180.png">
+                            </div>
+                            <div class="col-lg-8 brand-title">
+                                PENGURUSAN AIR PAHANG BERHAD
+                            </div>
+                        </div>
+                    </div><br>
+                    MOHD ROSHIDI BIN JAAFAR<br>
+                    No. 10, Lrg. GD 7 Taman Gambang<br>
+                    Jln. Kuantan - Gambang<br>
+                    Kuantan
+                </div>
+                <div class="col-lg-12 footer d-flex justify-content-between">
+                        <span class="red-title h5">JUMLAH PERLU DIBAYAR</span>
+                        <strong class="pull-right h5">RM12.20</strong>
+                </div>
+            </div>
+            <!-- End of First Section -->
+
+            <!-- Start of Second Section -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-borderless">
+                        <thead>
+                            <th></th>
+                            <th></th>
+                            <th class="text-right">AMAUN (RM)</th>
+                            <th class="text-right">BAYAR SEBELUM</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tunggakan</td>
+                                <td></td>
+                                <td class="text-right">0.00</td>
+                                <td class="text-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Ansuran</td>
+                                <td></td>
+                                <td class="text-right">-</td>
+                                <td class="text-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Jumlah Bil Semasa</td>
+                                <td></td>
+                                <td class="text-right">12.19</td>
+                                <td class="text-right">23-03-2020</td>
+                            </tr>
+                            <tr>
+                                <td>Penggenapan</td>
+                                <td></td>
+                                <td class="text-right">0.01</td>
+                                <td class="text-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Jumlah Bil</td>
+                                <td></td>
+                                <td class="text-right">12.20</td>
+                                <td class="text-right"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- End of First Section -->
+        </div>
+        
+    </main>
+</body>
+</html>
