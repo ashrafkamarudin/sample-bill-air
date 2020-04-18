@@ -1,10 +1,23 @@
 @import "bootstrap.min.css";
 
+.col-print-1 {width:8%;  float:left; padding: 0 15px 0 15px;}
+.col-print-2 {width:16%; float:left; padding: 0 15px 0 15px;}
+.col-print-3 {width:25%; float:left; padding: 0 15px 0 15px;}
+.col-print-4 {width:33%; float:left; padding: 0 15px 0 15px;}
+.col-print-5 {width:42%; float:left; padding: 0 15px 0 15px;}
+.col-print-6 {width:50%; float:left; padding: 0 15px 0 15px;}
+.col-print-7 {width:58%; float:left; padding: 0 15px 0 15px;}
+.col-print-8 {width:66%; float:left; padding: 0 15px 0 15px;}
+.col-print-9 {width:75%; float:left; padding: 0 15px 0 15px;}
+.col-print-10{width:83%; float:left; padding: 0 15px 0 15px;}
+.col-print-11{width:92%; float:left; padding: 0 15px 0 15px;}
+.col-print-12{width:100%; float:left; padding: 0 15px 0 15px;}
+
 .bill {
     color: #6c757d !important;
     border: 1px solid;
     padding: 20px;
-    max-width: 650px;
+    max-width: 600px;
 }
 
 .bill .title {
@@ -27,7 +40,7 @@
 }
 
 .bill .brand .brand-title {
-    top: 15px;
+    margin-top: 15px;
 }
 
 .bill .brand img {
@@ -42,7 +55,14 @@
 .bill .row .footer {
     padding: 10px 20px 8px 20px;
     margin-top: 15px;
-    background-color:#ebf2fd;
+    background-color:#ebf2fd !important;
+    -webkit-print-color-adjust: exact; 
+}
+
+.bill .row .footer table {    
+    width: 100%;
+    background-color:#ebf2fd !important;
+    -webkit-print-color-adjust: exact !important; 
 }
 
 .bill table th {
@@ -58,4 +78,15 @@
 
 .bill .footer  {
     padding: 20px 50px 0 50px;
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact !important; 
+    }
+
+    .bill .row .footer table {
+        background-color:#ebf2fd !important;
+        -webkit-print-color-adjust: exact !important; 
+    }
 }
