@@ -1,0 +1,61 @@
+@import "bootstrap.min.css";
+
+.bill {
+    color: #6c757d !important;
+    border: 1px solid;
+    padding: 20px;
+    max-width: 650px;
+}
+
+.bill .title {
+    font-weight:900;
+    color:#0069bd;
+    margin-bottom: 20px;
+}
+
+.bill .red-title {
+    color: red;
+}
+
+.bill .brand {
+    color:#3f51b5;
+    padding: 5px;
+}
+
+.bill .brand .row {
+    border-bottom: 0px;
+}
+
+.bill .brand .brand-title {
+    top: 15px;
+}
+
+.bill .brand img {
+    max-height: 75px;
+    max-width: 75px;
+}
+
+.bill .row {
+    border-bottom: 1px solid blue;
+}
+
+.bill .row .footer {
+    padding: 10px 20px 8px 20px;
+    margin-top: 15px;
+    background-color:#ebf2fd;
+}
+
+.bill table th {
+    width: 25%;
+    padding: 12px 0 12px 0;
+    color:#3f51b5;
+}
+
+.bill table td {
+    color: #6c757d !important;
+    padding: 0px;
+}
+
+.bill .footer  {
+    padding: 20px 50px 0 50px;
+}

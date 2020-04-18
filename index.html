@@ -7,67 +7,29 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous">
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
+
+
+    <script src="printThis.js"></script>
+    <link rel="stylesheet" href="css/bill.css">
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
         }
 
-        .bill {
-            border: 1px solid;
-            padding: 20px;
-            max-width: 650px;
-        }
-
-        .bill .title {
-            font-weight:900;
-            color:#0069bd;
-        }
-
-        .bill .red-title {
-            color: red;
-        }
-
-        .bill .brand {
-            color:#03a9f4;
-            padding: 5px;
-        }
-
-        .bill .brand .row {
-            border-bottom: 0px;
-        }
-
-        .bill .brand .brand-title {
-            top: 15px;
-        }
-
-        .bill .brand img {
-            max-height: 75px;
-            max-width: 75px;
-        }
-
-        .bill .row {
-            border-bottom: 1px solid blue;
-        }
-
-        .bill .row .footer {
-            padding: 10px 20px 8px 20px;
-            margin-top: 15px;
-            background-color:#ebf2fd;
-        }
-
-        .bill table th {
-            width: 25%;
-            color:#03a9f4;
-        }
-
-        .bill table td {
-            padding: 0px;
+        .print-button {
+            float: right;
         }
     </style>
 </head>
@@ -77,13 +39,16 @@
 
         <div style="margin: auto; max-width: 650px;padding: 100px 0 20px 0;">
             <small>Contoh Bil Air Untuk</small>
-            <h3>Pengurusan Air Pahang Berhad</h3>
+            <h3>
+                Pengurusan Air Pahang Berhad
+                <button id="print" class="btn btn-primary print-button">Print</button>
+            </h3>
         </div>
 
         <div id="bill" class="bill" style="margin: auto;">
             <!-- Start of First Section -->
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-sm-6">
                     <h2 class="title">Bil Air</h2>
 
                     <table>
@@ -120,7 +85,7 @@
                     </table>
 
                 </div>
-                <div class="col-lg-6">
+                <div class="col-sm-6">
                     <div class="brand">
                         <div class="row">
                             <div class="col-lg-4">
@@ -130,15 +95,15 @@
                                 PENGURUSAN AIR PAHANG BERHAD
                             </div>
                         </div>
-                    </div><br>
+                    </div><br><strong class="text-dark">
                     MOHD ROSHIDI BIN JAAFAR<br>
                     No. 10, Lrg. GD 7 Taman Gambang<br>
                     Jln. Kuantan - Gambang<br>
-                    Kuantan
+                    Kuantan</strong>
                 </div>
                 <div class="col-lg-12 footer d-flex justify-content-between">
                         <span class="red-title h5">JUMLAH PERLU DIBAYAR</span>
-                        <strong class="pull-right h5">RM12.20</strong>
+                        <strong class="pull-right h5 text-dark">RM12.20</strong>
                 </div>
             </div>
             <!-- End of First Section -->
@@ -217,8 +182,212 @@
                 </div>
             </div>
             <!-- End of Third Section -->
+
+            <!-- Start of Fourth Section -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-borderless">
+                        <thead>
+                            <th>No Mode</th>
+                            <th class="text-right">Tarikh</th>
+                            <th class="text-right">Bacaan</th>
+                            <th class="text-right">Penggunaan (m<small>3</small>)</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1306011087</td>
+                                <td class="text-right">27-02-2020</td>
+                                <td class="text-right">932</td>
+                                <td class="text-right">25</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="text-right">29-01-2020</td>
+                                <td class="text-right">898</td>
+                                <td class="text-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Jumlah Penggunaan</td>
+                                <td class="text-right"></td>
+                                <td class="text-right"></td>
+                                <td class="text-right">25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-lg-12 footer d-flex">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <td>Tempoh Bil</td>
+                                <td class="text-right">29 hari</td>
+                                <td class="text-right">Prorata</td>
+                                <td class="text-right">1.0000</td>
+                            </tr>
+                            <tr>
+                                <td>Tarif</td>
+                                <td class="text-right">A0 Domestik</td>
+                                <td class="text-right">Jenis Bacaan</td>
+                                <td class="text-right">N (Normal)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- End of Fourth Section -->
+
+            <!-- Start of Fifth Section -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-borderless">
+                        <thead>
+                            <th>Blok Tarif (m<small>3</small>)</th>
+                            <th class="text-right">Isipadu (m<small>3</small>)</th>
+                            <th class="text-right">Kadar (RM)</th>
+                            <th class="text-right">AMAUN (RM)</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0 - 18</td>
+                                <td class="text-right">18</td>
+                                <td class="text-right">0.370</td>
+                                <td class="text-right">6.66</td>
+                            </tr>
+                            <tr>
+                                <td>> 18 - 45</td>
+                                <td class="text-right">7</td>
+                                <td class="text-right">0.790</td>
+                                <td class="text-right">5.53</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-lg-12 footer d-flex">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <td>Penggunaan Air</td>
+                                <td class="text-right">25</td>
+                                <td class="text-right"></td>
+                                <td class="text-right">12.19</td>
+                            </tr>
+                            <tr>
+                                <td>Jumlah Caj Air Semasa</td>
+                                <td class="text-right"></td>
+                                <td class="text-right"></td>
+                                <td class="text-right">12.19</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- End of Fifth Section -->
+
+            <!-- Start of Sixth Section -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-borderless">
+                        <thead>
+                            <th>Keterangan</th>
+                            <th></th>
+                            <th class="text-right"></th>
+                            <th class="text-right">AMAUN (RM)</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Caj Air Semasa</td>
+                                <td></td>
+                                <td class="text-right"></td>
+                                <td class="text-right">12.19</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Jumlah Bil Semasa</td>
+                                <td class="text-right"></td>
+                                <td class="text-right">12.19</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- End of Sixth Section -->
+
+            <!-- Start of Footer Section -->
+            <div class="footer">
+                <div class="col-lg-12 d-flex justify-content-center mb-2">
+                    Pusat Layanan Pelanggan
+                </div>
+
+                <div class="col-lg-12 d-flex justify-content-between mb-2">
+
+                    <div class="text-center">
+                        Telefon<br>
+                        <strong class="text-dark">09-5739999</strong>
+                    </div>
+                    <div class="text-center">
+                        Telefon<br>
+                        <strong class="text-dark">09-5739999</strong>
+                    </div>
+                    <div class="text-center">
+                        Telefon<br>
+                        <strong class="text-dark">09-5739999</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-12 d-flex justify-content-center">
+                    Facebook: &nbsp<strong class="text-dark">Pengurusan Air Pahang Berhad Paip</strong>
+                </div>
+            </div>
+            <!-- End of Footer Section -->
+
         </div>
         
     </main>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue mt-5">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> No Copyright</a>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
 </body>
 </html>
+
+<script>
+$(window).on('load', function() {
+    $('#print').click(function(){
+        $("#bill").printThis({
+            debug: false,               // show the iframe for debugging
+            importCSS: true,            // import parent page css
+            importStyle: true,          // import style tags
+            printContainer: true,       // print outer container/$.selector
+            loadCSS: [
+                "css/bill.css"
+            ],                          // path to additional css file - use an array [] for multiple
+            pageTitle: "",              // add title to print page
+            removeInline: false,        // remove inline styles from print elements
+            removeInlineSelector: "*",  // custom selectors to filter inline styles. removeInline must be true
+            printDelay: 333,            // variable print delay
+            header: null,               // prefix to html
+            footer: null,               // postfix to html
+            base: false,                // preserve the BASE tag or accept a string for the URL
+            formValues: true,           // preserve input/form values
+            canvas: false,              // copy canvas content
+            doctypeString: '...',       // enter a different doctype for older markup
+            removeScripts: false,       // remove script tags from print content
+            copyTagClasses: false,      // copy classes from the html & body tag
+            beforePrintEvent: null,     // function for printEvent in iframe
+            beforePrint: null,          // function called before iframe is filled
+            afterPrint: null            // function called before iframe is removed
+        });
+    })
+})
+</script>
