@@ -18,21 +18,29 @@
     border: 1px solid;
     padding: 20px;
     max-width: 600px;
+    font-size: 12px;
 }
 
 .bill .title {
     font-weight:900;
     color:#0069bd;
     margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .bill .red-title {
     color: red;
 }
 
+.bill .dark-title {
+    color: #000;
+}
+
 .bill .brand {
     color:#3f51b5;
-    padding: 5px;
+    padding: 0px;
+    font-weight: 900;
+    margin: 0px 0px 0px 0px;
 }
 
 .bill .brand .row {
@@ -41,11 +49,14 @@
 
 .bill .brand .brand-title {
     margin-top: 15px;
+    margin-left: -40px;
 }
 
 .bill .brand img {
-    max-height: 75px;
-    max-width: 75px;
+    max-height: 65px;
+    max-width: 65px;
+    margin-left: -10px;
+    margin-top: -5px;
 }
 
 .bill .row {
@@ -65,6 +76,24 @@
     -webkit-print-color-adjust: exact !important; 
 }
 
+.bill .row .footer-red {
+    padding: 10px 20px 8px 20px;
+    margin-top: 15px;
+    color: black;
+    background-color:#f4433624 !important;
+    -webkit-print-color-adjust: exact; 
+}
+
+.bill .row .footer-nobg {
+    padding: 10px 20px 8px 20px;
+    margin-top: 15px;
+    color: black;
+}
+
+.bill .row .footer-nobg table {    
+    width: 100%;
+}
+
 .bill table th {
     width: 25%;
     padding: 12px 0 12px 0;
@@ -78,6 +107,11 @@
 
 .bill .footer  {
     padding: 20px 50px 0 50px;
+}
+
+.bill .icon {
+    width: 32px;
+    height: 32px;
 }
 
 @media print {
