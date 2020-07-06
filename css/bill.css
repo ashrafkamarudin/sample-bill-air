@@ -114,6 +114,12 @@
     height: 32px;
 }
 
+.bill .qr-code {
+    width: 64px;
+    height: 64px;
+    margin: auto;
+}
+
 @media print {
     body {
         -webkit-print-color-adjust: exact !important; 
