@@ -1,4 +1,5 @@
 @import "bootstrap.min.css";
+@import "../font/font.css";
 
 .col-print-1 {width:8%;  float:left; padding: 0 15px 0 15px;}
 .col-print-2 {width:16%; float:left; padding: 0 15px 0 15px;}
@@ -14,18 +15,29 @@
 .col-print-12{width:100%; float:left; padding: 0 15px 0 15px;}
 
 .bill {
-    color: #6c757d !important;
+    color: #000 !important;
     border: 1px solid;
     padding: 20px;
-    max-width: 600px;
-    font-size: 12px;
+    width: 750px;
+    font-size: 16px;
+    font-family: "Metropolis Regular", Times, serif;
+}
+
+.bill Strong, .bill bold, .bill table th, .bill .title, .bill .brand .brand-title, .bill .address {
+    font-family: "Metropolis Bold", Times, serif;
 }
 
 .bill .title {
+    margin-top: 15px;
     font-weight:900;
-    color:#0069bd;
+    color:#0364D1;
     margin-bottom: 20px;
     font-size: 24px;
+}
+
+.bill .address {
+    color: black; 
+    font-weight: bolder !important;
 }
 
 .bill .red-title {
@@ -37,7 +49,7 @@
 }
 
 .bill .brand {
-    color:#3f51b5;
+    color:#0364D1;
     padding: 0px;
     font-weight: 900;
     margin: 0px 0px 0px 0px;
@@ -48,8 +60,9 @@
 }
 
 .bill .brand .brand-title {
-    margin-top: 15px;
-    margin-left: -40px;
+    margin-top: 10px;
+    margin-left: -30px;
+    color:#0064d2;
 }
 
 .bill .brand img {
@@ -60,7 +73,7 @@
 }
 
 .bill .row {
-    border-bottom: 1px solid blue;
+    border-bottom: 2px solid #0064d2;
 }
 
 .bill .row .footer {
@@ -72,7 +85,7 @@
 
 .bill .row .footer table {    
     width: 100%;
-    background-color:#ebf2fd !important;
+    background-color:#e6f0fa !important;
     -webkit-print-color-adjust: exact !important; 
 }
 
@@ -80,7 +93,7 @@
     padding: 10px 20px 8px 20px;
     margin-top: 15px;
     color: black;
-    background-color:#f4433624 !important;
+    background-color:#fee6e5 !important;
     -webkit-print-color-adjust: exact; 
 }
 
@@ -97,7 +110,7 @@
 .bill table th {
     width: 25%;
     padding: 12px 0 12px 0;
-    color:#3f51b5;
+    color:#0064d2;
 }
 
 .bill table td {
