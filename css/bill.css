@@ -113,8 +113,16 @@
     color:#0064d2;
 }
 
+.bill table thead th .first {
+    width: 50% !important;
+}
+
+.bill th .second {
+    width: 15%;
+}
+
 .bill table td {
-    color: #6c757d !important;
+    color: #000 !important;
     padding: 0px;
 }
 
@@ -128,13 +136,14 @@
 }
 
 .bill .qr-code {
-    width: 64px;
-    height: 64px;
+    width: 108px;
+    height: 108px;
     margin: auto;
 }
 
 @media print {
     body {
+        line-height: 200%;
         -webkit-print-color-adjust: exact !important; 
     }
 
